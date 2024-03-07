@@ -3,7 +3,7 @@ pipeline {
 		label 'Node_1'
 	}
 	tools {
-	        maven 'maven1' 
+	        maven 'Apache Maven 3.6.3' 
    	}
 	stages {
 		stage ('build') {
