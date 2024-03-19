@@ -1,7 +1,5 @@
 pipeline {
-	agent {
-		label 'Node_1'
-	}
+	agent any
 	tools {
 	        maven 'Maven 3.8.1' 
    	}
@@ -18,7 +16,6 @@ pipeline {
 			}
 			post {
 				always {
-					junit 'target/surefire-reports/*.*xml'
 					archiveArtifacts artifacts: 'target/*.jar', followSymlinks: false
 				}
 			}
