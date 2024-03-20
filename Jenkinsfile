@@ -10,6 +10,9 @@ pipeline {
 			}
 		
 		}
+
+
+		
 		
 		stage ('test') {
 			steps {
